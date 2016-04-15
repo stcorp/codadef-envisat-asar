@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="ENVISAT_ASAR" last-modified="2015-03-31">
+<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="ENVISAT_ASAR" last-modified="2015-10-19">
   <cd:Description>ENVISAT ASAR products</cd:Description>
   <cd:ProductType name="ASA_WV__0P">
     <cd:Description>ASAR Level 0 Wave Mode</cd:Description>
@@ -13,7 +13,7 @@
   <cd:ProductType name="ASA_WVI_1P">
     <cd:Description>ASAR Wave Mode SLC Imagette and Imagette Cross Spectra</cd:Description>
     <cd:ProductDefinition id="ASA_WVI_1P_v0" format="binary" version="0">
-      <cd:Description>This definition is based on version 4/B of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_WVI_1P</cd:MatchData>
@@ -23,7 +23,7 @@
   <cd:ProductType name="ASA_WVS_1P">
     <cd:Description>ASAR Wave Mode Imagette Cross Spectra</cd:Description>
     <cd:ProductDefinition id="ASA_WVS_1P_v0" format="binary" version="0">
-      <cd:Description>This definition is based on version 4/B of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_WVS_1P</cd:MatchData>
@@ -33,7 +33,7 @@
   <cd:ProductType name="ASA_WVW_2P">
     <cd:Description>ASAR Wave Mode Ocean Wave-Spectra Product</cd:Description>
     <cd:ProductDefinition id="ASA_WVW_2P_v0" format="binary" version="0">
-      <cd:Description>This definition is based on version 4/B of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_WVW_2P</cd:MatchData>
@@ -56,6 +56,15 @@
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_GM1_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/B  </cd:MatchData>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+    <cd:ProductDefinition id="ASA_GM1_1P_v1" format="binary" version="1">
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
+        <cd:MatchData offset="9">ASA_GM1_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/C  </cd:MatchData>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
@@ -75,6 +84,15 @@
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_IMS_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/B  </cd:MatchData>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+    <cd:ProductDefinition id="ASA_IMS_1P_v1" format="binary" version="1">
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
+        <cd:MatchData offset="9">ASA_IMS_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/C  </cd:MatchData>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
@@ -85,6 +103,15 @@
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_IMP_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/B  </cd:MatchData>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+    <cd:ProductDefinition id="ASA_IMP_1P_v1" format="binary" version="1">
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
+        <cd:MatchData offset="9">ASA_IMP_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/C  </cd:MatchData>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
@@ -95,6 +122,15 @@
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_IMG_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/B  </cd:MatchData>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+    <cd:ProductDefinition id="ASA_IMG_1P_v1" format="binary" version="1">
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
+        <cd:MatchData offset="9">ASA_IMG_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/C  </cd:MatchData>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
@@ -105,13 +141,22 @@
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_IMM_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/B  </cd:MatchData>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+    <cd:ProductDefinition id="ASA_IMM_1P_v1" format="binary" version="1">
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
+        <cd:MatchData offset="9">ASA_IMM_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/C  </cd:MatchData>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
   <cd:ProductType name="ASA_IM__BP">
     <cd:Description>ASAR Image Mode Browse Product (stripline)</cd:Description>
     <cd:ProductDefinition id="ASA_IM__BP_v0" format="binary" version="0">
-      <cd:Description>This definition is based on version 4/B of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_IM__BP</cd:MatchData>
@@ -152,6 +197,15 @@
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_APS_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/B  </cd:MatchData>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+    <cd:ProductDefinition id="ASA_APS_1P_v1" format="binary" version="1">
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
+        <cd:MatchData offset="9">ASA_APS_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/C  </cd:MatchData>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
@@ -162,6 +216,15 @@
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_APP_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/B  </cd:MatchData>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+    <cd:ProductDefinition id="ASA_APP_1P_v1" format="binary" version="1">
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
+        <cd:MatchData offset="9">ASA_APP_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/C  </cd:MatchData>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
@@ -172,6 +235,15 @@
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_APG_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/B  </cd:MatchData>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+    <cd:ProductDefinition id="ASA_APG_1P_v1" format="binary" version="1">
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
+        <cd:MatchData offset="9">ASA_APG_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/C  </cd:MatchData>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
@@ -182,13 +254,22 @@
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_APM_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/B  </cd:MatchData>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+    <cd:ProductDefinition id="ASA_APM_1P_v1" format="binary" version="1">
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
+        <cd:MatchData offset="9">ASA_APM_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/C  </cd:MatchData>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
   <cd:ProductType name="ASA_AP__BP">
     <cd:Description>ASAR Alternating Polarization Mode Browse Product (stripline)</cd:Description>
     <cd:ProductDefinition id="ASA_AP__BP_v0" format="binary" version="0">
-      <cd:Description>This definition is based on version 4/B of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_AP__BP</cd:MatchData>
@@ -211,6 +292,15 @@
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_WSS_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/B  </cd:MatchData>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+    <cd:ProductDefinition id="ASA_WSS_1P_v1" format="binary" version="1">
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
+        <cd:MatchData offset="9">ASA_WSS_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/C  </cd:MatchData>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
@@ -221,13 +311,22 @@
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_WSM_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/B  </cd:MatchData>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+    <cd:ProductDefinition id="ASA_WSM_1P_v1" format="binary" version="1">
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
+        <cd:MatchData offset="9">ASA_WSM_1P</cd:MatchData>
+        <cd:MatchData offset="95">PO-RS-MDA-GS-2009_4/C  </cd:MatchData>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
   <cd:ProductType name="ASA_WS__BP">
     <cd:Description>ASAR Wide Swath Mode Browse Image (stripline)</cd:Description>
     <cd:ProductDefinition id="ASA_WS__BP_v0" format="binary" version="0">
-      <cd:Description>This definition is based on version 4/B of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_WS__BP</cd:MatchData>
@@ -237,7 +336,7 @@
   <cd:ProductType name="ASA_XCH_AX">
     <cd:Description> ASAR external characterization data</cd:Description>
     <cd:ProductDefinition id="ASA_XCH_AX_v0" format="binary" version="0">
-      <cd:Description>This definition is based on version 4/B of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_XCH_AX</cd:MatchData>
@@ -247,7 +346,7 @@
   <cd:ProductType name="ASA_XCA_AX">
     <cd:Description> ASAR external calibration data</cd:Description>
     <cd:ProductDefinition id="ASA_XCA_AX_v0" format="binary" version="0">
-      <cd:Description>This definition is based on version 4/B of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
+      <cd:Description>This definition is based on version 4/C of product specification PO-RS-MDA-GS-2009 Vol8</cd:Description>
       <cd:DetectionRule>
         <cd:MatchData offset="0">PRODUCT=</cd:MatchData>
         <cd:MatchData offset="9">ASA_XCA_AX</cd:MatchData>

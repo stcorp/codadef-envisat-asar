@@ -19,10 +19,10 @@
         <cd:Dimension><![CDATA[$num_dsr]]></cd:Dimension>
         <cd:Record>
           <cd:Field name="dsr_time">
-	      <cd:Time timeformat="binary_envisat_datetime">
-		<cd:Description>Time of characterization</cd:Description>
-	      </cd:Time>
-	    </cd:Field>
+          <cd:Time timeformat="binary_envisat_datetime">
+        <cd:Description>Time of characterization</cd:Description>
+          </cd:Time>
+        </cd:Field>
           <cd:Field name="dsr_length">
             <cd:Integer>
               <cd:Description>Length of this DSR in bytes</cd:Description>
@@ -32,7 +32,7 @@
             </cd:Integer>
           </cd:Field>
           <cd:Field name="ext_cal_im_hh">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for IM mode, SLC image, HH polar</cd:Description>
@@ -43,7 +43,7 @@
           </cd:Field>
         
           <cd:Field name="ext_cal_im_vv">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for IM mode, SLC image, VV polar</cd:Description>
@@ -54,7 +54,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_im_pri_hh">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for IM mode, Precision Image, HH polar</cd:Description>
@@ -64,8 +64,8 @@
            </cd:Array>
           </cd:Field>
 
-	 <cd:Field name="ext_cal_im_pri_vv">
-	  <cd:Array>
+     <cd:Field name="ext_cal_im_pri_vv">
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for IM mode, Precision Image, VV polar</cd:Description>
@@ -75,8 +75,8 @@
            </cd:Array>
           </cd:Field>
 
-	 <cd:Field name="ext_cal_im_geo_hh">
-	  <cd:Array>
+     <cd:Field name="ext_cal_im_geo_hh">
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for IM mode, Geocoded Image, HH polar</cd:Description>
@@ -87,7 +87,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_im_geo_vv">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for IM mode, Geocoded Image, VV polar</cd:Description>
@@ -98,7 +98,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_im_med_hh">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for IM mode, Medium Resolution Image, HH polarisation</cd:Description>
@@ -109,7 +109,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_im_med_vv">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for IM mode, Medium Resolution Image, VV polarisation</cd:Description>
@@ -120,7 +120,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_hh">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, SLC image, HH polar</cd:Description>
@@ -131,7 +131,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_vv">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, SLC image, VV polar</cd:Description>
@@ -142,7 +142,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_hv">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, SLC image, HV polar</cd:Description>
@@ -153,7 +153,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_vh">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, SLC image, VH polar</cd:Description>
@@ -164,7 +164,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_pri_hh">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, Precision Image, HH polar</cd:Description>
@@ -175,7 +175,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_pri_vv">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, Precision Image, VV polar</cd:Description>
@@ -186,7 +186,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_pri_hv">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, Precision Image, HV polar</cd:Description>
@@ -197,7 +197,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_pri_vh">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, Precision Image, VH polar</cd:Description>
@@ -208,7 +208,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_geo_hh">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, Geocoded Image, HH polar</cd:Description>
@@ -219,7 +219,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_geo_vv">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, Geocoded Image, VV polar</cd:Description>
@@ -230,7 +230,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_geo_hv">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, Geocoded Image, HV polarisation</cd:Description>
@@ -241,7 +241,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_geo_vh">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, Geocoded Image, VH polar</cd:Description>
@@ -252,7 +252,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_med_hh">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, Medium Resolution Image, HH polarisation</cd:Description>
@@ -263,7 +263,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_med_vv">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, Medium Resolution Image, VV polarisation</cd:Description>
@@ -274,7 +274,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_med_hv">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, Medium Resolution Image, HV polarisation</cd:Description>
@@ -285,7 +285,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_ap_med_vh">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for AP mode, Medium Resolution Image, VH polarisation</cd:Description>
@@ -296,7 +296,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_wv_hh">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for WV mode, HH polarisation</cd:Description>
@@ -307,7 +307,7 @@
           </cd:Field>
 
           <cd:Field name="ext_cal_wv_vv">
-	  <cd:Array>
+      <cd:Array>
             <cd:Dimension>7</cd:Dimension>
             <cd:Float>
               <cd:Description>External Calibration scaling factors for WV mode, VV polar</cd:Description>
@@ -317,7 +317,7 @@
            </cd:Array>
           </cd:Field>
 
-          <cd:Field name="ext_cal_ws_hh">	 
+          <cd:Field name="ext_cal_ws_hh">    
             <cd:Float>
               <cd:Description>External Calibration scaling factors for WS mode, detected image 111HH polar</cd:Description>
               <cd:ByteSize>4</cd:ByteSize>
@@ -354,7 +354,7 @@
               <cd:Description>Reference elevation angle for IS1</cd:Description>
               <cd:ByteSize>4</cd:ByteSize>
               <cd:NativeType>float</cd:NativeType>
-	      <cd:Unit>deg</cd:Unit>
+          <cd:Unit>deg</cd:Unit>
             </cd:Float>
           </cd:Field>
 
@@ -363,7 +363,7 @@
               <cd:Description>Reference elevation angle for IS2</cd:Description>
               <cd:ByteSize>4</cd:ByteSize>
               <cd:NativeType>float</cd:NativeType>
-	      <cd:Unit>deg</cd:Unit>
+          <cd:Unit>deg</cd:Unit>
             </cd:Float>
           </cd:Field>
 
@@ -372,7 +372,7 @@
               <cd:Description>Reference elevation angle for IS3 / SS2</cd:Description>
               <cd:ByteSize>4</cd:ByteSize>
               <cd:NativeType>float</cd:NativeType>
-	      <cd:Unit>deg</cd:Unit>
+          <cd:Unit>deg</cd:Unit>
             </cd:Float>
           </cd:Field>
 
@@ -381,7 +381,7 @@
               <cd:Description>Reference elevation angle for IS4 / SS3</cd:Description>
               <cd:ByteSize>4</cd:ByteSize>
               <cd:NativeType>float</cd:NativeType>
-	      <cd:Unit>deg</cd:Unit>
+          <cd:Unit>deg</cd:Unit>
             </cd:Float>
           </cd:Field>
 
@@ -390,7 +390,7 @@
               <cd:Description>Reference elevation angle for IS5 / SS4</cd:Description>
               <cd:ByteSize>4</cd:ByteSize>
               <cd:NativeType>float</cd:NativeType>
-	      <cd:Unit>deg</cd:Unit>
+          <cd:Unit>deg</cd:Unit>
             </cd:Float>
           </cd:Field>
 
@@ -399,7 +399,7 @@
               <cd:Description>Reference elevation angle for IS6 / SS5</cd:Description>
               <cd:ByteSize>4</cd:ByteSize>
               <cd:NativeType>float</cd:NativeType>
-	      <cd:Unit>deg</cd:Unit>
+          <cd:Unit>deg</cd:Unit>
             </cd:Float>
           </cd:Field>
 
@@ -408,7 +408,7 @@
               <cd:Description>Reference elevation angle for IS7</cd:Description>
               <cd:ByteSize>4</cd:ByteSize>
               <cd:NativeType>float</cd:NativeType>
-	      <cd:Unit>deg</cd:Unit>
+          <cd:Unit>deg</cd:Unit>
             </cd:Float>
           </cd:Field>
 
@@ -417,7 +417,7 @@
               <cd:Description>Reference elevation angle for SS1</cd:Description>
               <cd:ByteSize>4</cd:ByteSize>
               <cd:NativeType>float</cd:NativeType>
-	      <cd:Unit>deg</cd:Unit>
+          <cd:Unit>deg</cd:Unit>
             </cd:Float>
           </cd:Field>
 

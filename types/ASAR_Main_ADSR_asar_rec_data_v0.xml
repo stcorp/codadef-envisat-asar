@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:Record format="binary" name="ASAR_Main_ADSR_asar_rec_data" last-modified="2011-07-02" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
+<cd:Record format="binary" name="ASAR_Main_ADSR_asar_rec_data_v0" last-modified="2011-07-02" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
   <cd:Field name="first_zero_doppler_time">
     <cd:Time timeformat="binary_envisat_datetime">
       <cd:Description>First Zero Doppler Azimuth time of MDS which this data set describes</cd:Description>
