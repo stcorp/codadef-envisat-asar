@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<cd:Record format="binary" name="ASAR_L0_MDSR" last-modified="2010-08-26" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
+  <cd:Field name="dsr_time">
+    <cd:Time timeformat="binary_envisat_datetime">
+      <cd:Description>ISP Sensing Time</cd:Description>
+    </cd:Time>
+  </cd:Field>
+  <cd:Field name="gsrt">
+    <cd:Time timeformat="binary_envisat_datetime">
+      <cd:Description>Ground Station Reference Time of reception</cd:Description>
+    </cd:Time>
+  </cd:Field>
+  <cd:Field name="isp_length">
+    <cd:Integer>
+      <cd:Description>Length of the ISP = length of the source packet - 7 bytes</cd:Description>
+      <cd:Unit>bytes</cd:Unit>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="crc_errs">
+    <cd:Integer>
+      <cd:Description>Number of VCDUs in the ISP which contain a CRC error</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rs_errs">
+    <cd:Integer>
+      <cd:Description>Number of VCDUs in the ISP for which a Reed-Solomon error correction was performed</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="spare_1">
+    <cd:Array>
+      <cd:Description>Spare (set to zero)</cd:Description>
+      <cd:Dimension>2</cd:Dimension>
+      <cd:Integer>
+        <cd:BitSize>8</cd:BitSize>
+        <cd:NativeType>uint8</cd:NativeType>
+      </cd:Integer>
+    </cd:Array>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="packet_header">
+    <cd:NamedType id="CCSDS_packet_header"/>
+  </cd:Field>
+  <cd:Field name="datafield_header_length">
+    <cd:Integer>
+      <cd:Description>Data Field Header Length</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="instrument_mode">
+    <cd:Integer>
+      <cd:Description>Instrument mode</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="time_code">
+    <cd:Integer>
+      <cd:Description>Time Code. Free-running 65535Hz</cd:Description>
+      <cd:BitSize>40</cd:BitSize>
+      <cd:NativeType>int64</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="spare_0">
+    <cd:Raw>
+      <cd:Description>spare</cd:Description>
+      <cd:BitSize>8</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="mode_packet_count">
+    <cd:Integer>
+      <cd:Description>Mode Packet Count</cd:Description>
+      <cd:BitSize>24</cd:BitSize>
+      <cd:NativeType>int64</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="antenna_beam_set_number">
+    <cd:Integer>
+      <cd:Description>Antenna Beam Set number. Characterised prior to launch</cd:Description>
+      <cd:BitSize>6</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="compression_ratio">
+    <cd:Integer>
+      <cd:Description>Compression Ratio</cd:Description>
+      <cd:BitSize>2</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="echo_flag">
+    <cd:Integer>
+      <cd:Description>Echo Flag. True if Echo data</cd:Description>
+      <cd:BitSize>1</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="noise_flag">
+    <cd:Integer>
+      <cd:Description>Noise Flag. True if Noise data</cd:Description>
+      <cd:BitSize>1</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="cal_flag">
+    <cd:Integer>
+      <cd:Description>Cal Flag. True if Calibration data</cd:Description>
+      <cd:BitSize>1</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="cal_type">
+    <cd:Integer>
+      <cd:Description>Cal Flag. True if Periodic Cal data</cd:Description>
+      <cd:BitSize>1</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="cycle_packet_count">
+    <cd:Integer>
+      <cd:Description>Cycle Packet Count</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="pri">
+    <cd:Integer>
+      <cd:Description>Pulse Repetition Interval. PRI * RadarSamplingRate</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="window_start_time">
+    <cd:Integer>
+      <cd:Description>Window Start Time. Windowtime * RadarSamplingRate</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="window_length">
+    <cd:Integer>
+      <cd:Description>Window Length. Windowlength * RadarSamplingRate</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="upconverter_level">
+    <cd:Integer>
+      <cd:Description>Upconverter Level. 2 * Gain (dB)</cd:Description>
+      <cd:BitSize>4</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="downconverter_level">
+    <cd:Integer>
+      <cd:Description>Downconverter Level. 1 * Gain (dB)</cd:Description>
+      <cd:BitSize>5</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="tx_pol">
+    <cd:Integer>
+      <cd:Description>Tx Polarisation. True if Vertical</cd:Description>
+      <cd:BitSize>1</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rx_pol">
+    <cd:Integer>
+      <cd:Description>Rx Polarisation. True if Vertical</cd:Description>
+      <cd:BitSize>1</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="cal_row_number">
+    <cd:Integer>
+      <cd:Description>Calibration Row number. Used during Periodic Cal</cd:Description>
+      <cd:BitSize>5</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="tx_pulse_length">
+    <cd:Integer>
+      <cd:Description>Tx Pulse Length. Pulselength * RadarSamplingRate</cd:Description>
+      <cd:BitSize>10</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="beam_adjustment_delta">
+    <cd:Integer>
+      <cd:Description>Beam Adjustment Delta. delta * 4096 / 360 + 32</cd:Description>
+      <cd:BitSize>6</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="chirp_pulse_bw">
+    <cd:Integer>
+      <cd:Description>Chirp Pulse Bandwidth. BW * 255 / 16E6</cd:Description>
+      <cd:BitSize>8</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="aux_tx_mon_level">
+    <cd:Integer>
+      <cd:Description>Auxiliary Tx Monitor Level</cd:Description>
+      <cd:BitSize>8</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="resampling_factor">
+    <cd:Integer>
+      <cd:Description>Resampling factor. values 1 to 64 are valid</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="source_packet">
+    <cd:Raw>
+      <cd:Description>Downlinked source packet</cd:Description>
+      <cd:BitSize>8 * (int(../isp_length) + 1 - 30)</cd:BitSize>
+    </cd:Raw>
+  </cd:Field>
+</cd:Record>

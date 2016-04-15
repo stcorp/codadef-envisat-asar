@@ -1,0 +1,504 @@
+<?xml version="1.0"?>
+<cd:Record xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" format="binary" name="ASAR_Map_GADS_asar_rec_data" last-modified="2011-07-02">
+  <cd:Field name="map_descriptor">
+    <cd:Text format="ascii">
+      <cd:Description>Map projection descriptorone of:UNIVERSAL_TRANSVERSE_MERCATOR</cd:Description>
+      <cd:ByteSize>32</cd:ByteSize>
+      <cd:NativeType>string</cd:NativeType>
+    </cd:Text>
+  </cd:Field>
+  <cd:Field name="samples">
+    <cd:Integer>
+      <cd:Description>Number of samples per line</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="lines">
+    <cd:Integer>
+      <cd:Description>Number of lines</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="sample_spacing">
+    <cd:Float>
+      <cd:Description>Nominal inter-sample distance</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="line_spacing">
+    <cd:Float>
+      <cd:Description>Nominal inter-line distance</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="orientation">
+    <cd:Float>
+      <cd:Description>Output scene centre orientation</cd:Description>
+      <cd:Unit>degrees</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="spare_1">
+    <cd:Raw>
+      <cd:Description>Spare</cd:Description>
+      <cd:BitSize>40*8</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="heading">
+    <cd:Float>
+      <cd:Description>Platform heading, degrees</cd:Description>
+      <cd:Unit>degrees</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="ellipsoid_name">
+    <cd:Text format="ascii">
+      <cd:Description>Reference ellipsoid name</cd:Description>
+      <cd:ByteSize>32</cd:ByteSize>
+      <cd:NativeType>string</cd:NativeType>
+    </cd:Text>
+  </cd:Field>
+  <cd:Field name="semi_major">
+    <cd:Float>
+      <cd:Description>Ellipsoid semi-major axis, metres</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="semi_minor">
+    <cd:Float>
+      <cd:Description>Ellipsoid semi-minor axis, metres</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="shift_dx">
+    <cd:Float>
+      <cd:Description>Datum shift parameter referenced to Greenwich: dx (metres)</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="shift_dy">
+    <cd:Float>
+      <cd:Description>Datum shift parameter perpendicular to Greenwich: dy (metres)</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="shift_dz">
+    <cd:Float>
+      <cd:Description>Datum shift parameter direction of the rotation axis: dz (metres)</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="avg_height">
+    <cd:Float>
+      <cd:Description>average scene height above ellipsoid used for geocoding</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="spare_2">
+    <cd:Raw>
+      <cd:Description>Spare</cd:Description>
+      <cd:BitSize>12*8</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="projection_description">
+    <cd:Text format="ascii">
+      <cd:Description>Map projection alphanumeric description</cd:Description>
+      <cd:ByteSize>32</cd:ByteSize>
+      <cd:NativeType>string</cd:NativeType>
+    </cd:Text>
+  </cd:Field>
+  <cd:Field name="utm_descriptor">
+    <cd:Text format="ascii">
+      <cd:Description>UTM descriptorUNIVERSAL_TRANSVERSE_MERCATOR</cd:Description>
+      <cd:ByteSize>32</cd:ByteSize>
+      <cd:NativeType>string</cd:NativeType>
+    </cd:Text>
+  </cd:Field>
+  <cd:Field name="utm_zone">
+    <cd:Text format="ascii">
+      <cd:Description>UTM zone signature</cd:Description>
+      <cd:ByteSize>4</cd:ByteSize>
+      <cd:NativeType>string</cd:NativeType>
+    </cd:Text>
+  </cd:Field>
+  <cd:Field name="utm_origin_easting">
+    <cd:Float>
+      <cd:Description>Map origin, false easting</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="utm_origin_northing">
+    <cd:Float>
+      <cd:Description>Map origin, false northing</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="utm_center_long">
+    <cd:Integer>
+      <cd:Description>Projection centre longitude, deg</cd:Description>
+      <cd:Unit>1e-6 degrees_east</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>int32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="utm_center_lat">
+    <cd:Integer>
+      <cd:Description>Projection centre latitude, deg</cd:Description>
+      <cd:Unit>1e-6 degrees_north</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>int32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="utm_para1">
+    <cd:Float>
+      <cd:Description>1st standard parallel, deg</cd:Description>
+      <cd:Unit>degrees</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="utm_para2">
+    <cd:Float>
+      <cd:Description>2nd standard parallel, deg</cd:Description>
+      <cd:Unit>degrees</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="utm_scale">
+    <cd:Float>
+      <cd:Description>Scale factor</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="ups_descriptor">
+    <cd:Text format="ascii">
+      <cd:Description>UPS descriptor</cd:Description>
+      <cd:ByteSize>32</cd:ByteSize>
+      <cd:NativeType>string</cd:NativeType>
+    </cd:Text>
+  </cd:Field>
+  <cd:Field name="ups_center_long">
+    <cd:Integer>
+      <cd:Description>Projection centre longitude, deg</cd:Description>
+      <cd:Unit>1e-6 degrees_east</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>int32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="ups_center_lat">
+    <cd:Integer>
+      <cd:Description>Projection centre latitude, deg</cd:Description>
+      <cd:Unit>1e-6 degrees_north</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>int32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="ups_scale">
+    <cd:Float>
+      <cd:Description>Scale factor</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="nsp_descriptor">
+    <cd:Text format="ascii">
+      <cd:Description>nsp descriptor</cd:Description>
+      <cd:ByteSize>32</cd:ByteSize>
+      <cd:NativeType>string</cd:NativeType>
+    </cd:Text>
+  </cd:Field>
+  <cd:Field name="origin_easting">
+    <cd:Float>
+      <cd:Description>Map origin, false easting</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="origin_northing">
+    <cd:Float>
+      <cd:Description>Map origin, false northing</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="center_long">
+    <cd:Integer>
+      <cd:Description>Projection centre longitude, deg</cd:Description>
+      <cd:Unit>1e-6 degrees_east</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>int32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="center_lat">
+    <cd:Integer>
+      <cd:Description>Projection centre latitude, deg</cd:Description>
+      <cd:Unit>1e-6 degrees_north</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>int32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="standard_parallel_parameters">
+    <cd:Record>
+      <cd:Field name="para1">
+        <cd:Float>
+          <cd:Description>Standard parallel1, deg</cd:Description>
+          <cd:Unit>degrees</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="para2">
+        <cd:Float>
+          <cd:Description>Standard parallel2, deg</cd:Description>
+          <cd:Unit>degrees</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="spare">
+        <cd:Raw>
+          <cd:Description>Spare</cd:Description>
+          <cd:BitSize>8*8</cd:BitSize>
+        </cd:Raw>
+        <cd:Hidden/>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="central_meridian_parameters">
+    <cd:Record>
+      <cd:Field name="central_m1">
+        <cd:Float>
+          <cd:Description>Central meridian1, deg</cd:Description>
+          <cd:Unit>degrees</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="spare">
+        <cd:Raw>
+          <cd:Description>Spare</cd:Description>
+          <cd:BitSize>8*8</cd:BitSize>
+        </cd:Raw>
+        <cd:Hidden/>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="projection_parameters">
+    <cd:Record>
+      <cd:Field name="central_m1">
+        <cd:Float>
+          <cd:Description>Projection dependent1</cd:Description>
+          <cd:Unit>degrees</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="spare">
+        <cd:Raw>
+          <cd:Description>Spare</cd:Description>
+          <cd:BitSize>12*8</cd:BitSize>
+        </cd:Raw>
+        <cd:Hidden/>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="position_northings_eastings">
+    <cd:Record>
+      <cd:Field name="tl_northing">
+        <cd:Float>
+          <cd:Description>Top left corner northing, meters;</cd:Description>
+          <cd:Unit>m</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="tl_easting">
+        <cd:Float>
+          <cd:Description>Top left corner easting, meters;</cd:Description>
+          <cd:Unit>m</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="tr_northing">
+        <cd:Float>
+          <cd:Description>Top right corner northing, meters;</cd:Description>
+          <cd:Unit>m</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="tr_easting">
+        <cd:Float>
+          <cd:Description>Top right corner easting, meters;</cd:Description>
+          <cd:Unit>m</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="br_northing">
+        <cd:Float>
+          <cd:Description>Bottom right corner northing, meters;</cd:Description>
+          <cd:Unit>m</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="br_easting">
+        <cd:Float>
+          <cd:Description>Bottom right corner easting, meters;</cd:Description>
+          <cd:Unit>m</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="bl_northing">
+        <cd:Float>
+          <cd:Description>Bottom left corner northing, meters;</cd:Description>
+          <cd:Unit>m</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="bl_easting">
+        <cd:Float>
+          <cd:Description>Bottom left corner easting, meters;</cd:Description>
+          <cd:Unit>m</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="position_lat_long">
+    <cd:Record>
+      <cd:Field name="tl_lat">
+        <cd:Integer>
+          <cd:Description>Top left corner latitude,</cd:Description>
+          <cd:Unit>1e-6 degrees_north</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>int32</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="tl_long">
+        <cd:Integer>
+          <cd:Description>Top left corner longitude,</cd:Description>
+          <cd:Unit>1e-6 degrees_east</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>int32</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="tr_lat">
+        <cd:Integer>
+          <cd:Description>Top right corner latitude,</cd:Description>
+          <cd:Unit>1e-6 degrees_north</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>int32</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="tr_long">
+        <cd:Integer>
+          <cd:Description>Top right corner longitude,</cd:Description>
+          <cd:Unit>1e-6 degrees_east</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>int32</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="br_lat">
+        <cd:Integer>
+          <cd:Description>Bottom right corner latitude</cd:Description>
+          <cd:Unit>1e-6 degrees_north</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>int32</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="br_long">
+        <cd:Integer>
+          <cd:Description>Bottom right corner longitude,</cd:Description>
+          <cd:Unit>1e-6 degrees_east</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>int32</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="bl_lat">
+        <cd:Integer>
+          <cd:Description>Bottom left corner latitude,</cd:Description>
+          <cd:Unit>1e-6 degrees_north</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>int32</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="bl_long">
+        <cd:Integer>
+          <cd:Description>Bottom left corner longitude,</cd:Description>
+          <cd:Unit>1e-6 degrees_east</cd:Unit>
+          <cd:BitSize>32</cd:BitSize>
+          <cd:NativeType>int32</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="spare_7">
+    <cd:Raw>
+      <cd:Description>Spare</cd:Description>
+      <cd:BitSize>32*8</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="image_to_map_coefs">
+    <cd:Array>
+      <cd:Description>8 coefficients to convert a line(L) and sample (S) position to the map projection frame of reference, say (E,N)E = A11 + A12*L + A13 *S + A14 *L*SN = A21 + A22*L + A23 *S + A24 *L*S</cd:Description>
+      <cd:Dimension>8</cd:Dimension>
+      <cd:Float>
+        <cd:BitSize>32</cd:BitSize>
+        <cd:NativeType>float</cd:NativeType>
+      </cd:Float>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="map_to_image_coefs">
+    <cd:Array>
+      <cd:Description>8 coefficients to convert from the map projection (E,N) to line (L) and sample(S) position in the imageL = B11 + B12*E + B13 *N + B14 *E*NS = B21 + B22*E + B23 *N + B24 *E*N</cd:Description>
+      <cd:Dimension>8</cd:Dimension>
+      <cd:Float>
+        <cd:BitSize>32</cd:BitSize>
+        <cd:NativeType>float</cd:NativeType>
+      </cd:Float>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="spare_8">
+    <cd:Raw>
+      <cd:Description>Spare</cd:Description>
+      <cd:BitSize>35*8</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+</cd:Record>

@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<cd:Record format="binary" name="ASAR_Ocean_Spectra_MDSR_asar_rec_data" last-modified="2011-07-02" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
+  <cd:Field name="zero_doppler_time">
+    <cd:Time timeformat="binary_envisat_datetime">
+      <cd:Description>Zero Doppler Time (MJD format)</cd:Description>
+    </cd:Time>
+  </cd:Field>
+  <cd:Field name="quality_flag">
+    <cd:Integer>
+      <cd:Description>Quality Indicator (-1 for blank MDSR, 0 otherwise)</cd:Description>
+      <cd:BitSize>8</cd:BitSize>
+      <cd:NativeType>int8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="range_spectral_res">
+    <cd:Float>
+      <cd:Description>Range spectral resolution of the cartesian cross spectrum</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="az_spectral_res">
+    <cd:Float>
+      <cd:Description>Azimuth spectral resolution of the cartesian cross spectrum</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="ambiguity_removal_factor">
+    <cd:Float>
+      <cd:Description>Ambiguity removal factor</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="spec_tot_energy">
+    <cd:Float>
+      <cd:Description>Spectrum Total Energy</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="spec_max_energy">
+    <cd:Float>
+      <cd:Description>Spectrum Max Energy</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="spec_max_dir">
+    <cd:Float>
+      <cd:Description>Direction of Spectrum Max (deg)on higher resolution grid</cd:Description>
+      <cd:Unit>degrees</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="spec_max_wl">
+    <cd:Float>
+      <cd:Description>Wavelength of Spectrum Max (m)on higher resolution grid</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="az_image_shift_var">
+    <cd:Float>
+      <cd:Description>Variance of the azimuth image shift caused by the orbital velocity</cd:Description>
+      <cd:Unit>m2</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="az_cutoff">
+    <cd:Float>
+      <cd:Description>Azimuthal Clutter Cut-off length (m)</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="nonlinear_spectral_width">
+    <cd:Float>
+      <cd:Description>Spectral width of the non-linear part of the cross spectra</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="image_intensity">
+    <cd:Float>
+      <cd:Description>Image intensity</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="image_variance">
+    <cd:Float>
+      <cd:Description>Normalised image variance</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="spare_2">
+    <cd:Raw>
+      <cd:Description>Spare</cd:Description>
+      <cd:BitSize>56*8</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="min_spectrum">
+    <cd:Float>
+      <cd:Description>Min value of ocean wave spectrum</cd:Description>
+      <cd:Unit>m4</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="max_spectrum">
+    <cd:Float>
+      <cd:Description>Max value of ocean wave spectrum</cd:Description>
+      <cd:Unit>m4</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="spare_3">
+    <cd:Raw>
+      <cd:Description>Spare</cd:Description>
+      <cd:BitSize>8*8</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="wind_speed">
+    <cd:Float>
+      <cd:Description>Forcast Wind speed (if provided)</cd:Description>
+      <cd:Unit>m/s</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="wind_direction">
+    <cd:Float>
+      <cd:Description>Forcast Wind direction (if provided)</cd:Description>
+      <cd:Unit>degrees</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="norm_inv_wave_age">
+    <cd:Float>
+      <cd:Description>Normalized inverse wave age</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="SAR_wave_height">
+    <cd:Float>
+      <cd:Description>SAR swell wave height</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="SAR_az_shift_var">
+    <cd:Float>
+      <cd:Description>Variance of the azimuth shift computed from the SAR swell wave spectra</cd:Description>
+      <cd:Unit>m2</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="backscatter">
+    <cd:Float>
+      <cd:Description>Backscattering coefficient</cd:Description>
+      <cd:Unit>dB</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="confidence_swell">
+    <cd:Integer>
+      <cd:Description>Confidence measure of the swell inversion</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="signal_to_noise">
+    <cd:Float>
+      <cd:Description>Average signal-to-noise ratio</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="radar_vel_corr">
+    <cd:Float>
+      <cd:Description>Radar velocity off-set correction</cd:Description>
+      <cd:Unit>m/s</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="cmod_cal_const">
+    <cd:Float>
+      <cd:Description>Calibration constant - CMOD</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="confidence_wind">
+    <cd:Integer>
+      <cd:Description>Confidence measure of the wind retrieval</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="spare_4">
+    <cd:Raw>
+      <cd:Description>Spare</cd:Description>
+      <cd:BitSize>24*8</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="ocean_spectra">
+    <cd:Array>
+      <cd:Description>Ocean Wave Swell spectra polar grid. Number of bins in wavelength and direction defined in SPH (nominally 24 by 36). Arranged as 24 wavelength cells from shortest to longest wavelength, for zero degrees, then 10 degrees, up to 350 degrees.</cd:Description>
+      <cd:Dimension>$num_wl_bins</cd:Dimension>
+      <cd:Dimension>$num_dir_bins</cd:Dimension>
+      <cd:Integer>
+        <cd:BitSize>8</cd:BitSize>
+        <cd:NativeType>uint8</cd:NativeType>
+      </cd:Integer>
+    </cd:Array>
+  </cd:Field>
+</cd:Record>

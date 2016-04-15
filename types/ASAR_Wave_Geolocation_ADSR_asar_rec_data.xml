@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<cd:Record xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" format="binary" name="ASAR_Wave_Geolocation_ADSR_asar_rec_data" last-modified="2010-08-26">
+  <cd:Field name="zero_doppler_time">
+    <cd:Time timeformat="binary_envisat_datetime">
+      <cd:Description>Zero Doppler Time of first line of the first line of the imagette</cd:Description>
+    </cd:Time>
+  </cd:Field>
+  <cd:Field name="attach_flag">
+    <cd:Integer>
+      <cd:Description>Attachment Flag (set to 1 if unable to compute the cross spectra for a given SLC imagette (i.e. no Cross Spectra MDSR corresponding to this ADSR), set to 0 otherwise)</cd:Description>
+      <cd:BitSize>8</cd:BitSize>
+      <cd:NativeType>int8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="center_lat">
+    <cd:Integer>
+      <cd:Description>Geodetic latitude of center point (positive north) This is the center point of the wave cell. It is calculated after the cross spectra processing, and thus may differ from the center sample latitude of the SLC imagette if slant range to ground range conve</cd:Description>
+      <cd:Unit>1e-6 degrees_north</cd:Unit>
+      <cd:Conversion numerator="1.000000" denominator="1000000.000000">
+        <cd:Unit>degrees_north</cd:Unit>
+      </cd:Conversion>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>int32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="center_long">
+    <cd:Integer>
+      <cd:Description>Geodetic longitude of center point (positive east)This is the center point of the wave cell. It is calculated after the cross spectra processing, and thus may differ from the center sample latitude of the SLC imagette if slant range to ground range conver</cd:Description>
+      <cd:Unit>1e-6 degrees_east</cd:Unit>
+      <cd:Conversion numerator="1.000000" denominator="1000000.000000">
+        <cd:Unit>degrees_east</cd:Unit>
+      </cd:Conversion>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>int32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="heading">
+    <cd:Float>
+      <cd:Description>Subsatellite Track Heading (relative to north) of center point</cd:Description>
+      <cd:Unit>degrees</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+</cd:Record>

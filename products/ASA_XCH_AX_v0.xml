@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition id="ASA_XCH_AX_v0" format="binary" last-modified="2012-07-31"
+  xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
+  <cd:Record format="binary">
+    <cd:Field name="mph">
+      <cd:NamedType id="MPH"/>
+    </cd:Field>
+    <cd:Field name="sph">
+      <cd:NamedType id="Auxiliary_Data_SPH"/>
+    </cd:Field>
+    <cd:Field name="dsd">
+      <cd:Array format="ascii">
+        <cd:Dimension>1</cd:Dimension>
+        <cd:NamedType id="DSD"/>
+      </cd:Array>
+    </cd:Field>
+    <cd:Field name="gadsr">
+       <cd:Array>
+        <cd:Dimension><![CDATA[$num_dsr]]></cd:Dimension>
+        <cd:Record>
+          <cd:Field name="dsr_time">
+	      <cd:Time timeformat="binary_envisat_datetime">
+		<cd:Description>Time of characterization</cd:Description>
+	      </cd:Time>
+	    </cd:Field>
+          <cd:Field name="dsr_length">
+            <cd:Integer>
+              <cd:Description>Length of this DSR in bytes</cd:Description>
+              <cd:BitSize>32</cd:BitSize>
+              <cd:NativeType>uint32</cd:NativeType>
+              <cd:Unit>bytes</cd:Unit>
+            </cd:Integer>
+          </cd:Field>
+          <cd:Field name="complex_loop_factors">
+	  <cd:Array>
+            <cd:Dimension>128</cd:Dimension>
+            <cd:Float>
+              <cd:Description>Complex loop paths characterisation factors relative to free space</cd:Description>
+              <cd:BitSize>32</cd:BitSize>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+           </cd:Array>
+          </cd:Field>
+          <cd:Field name="pointing_error">
+            <cd:Float>
+              <cd:Description>Antenna pointing error</cd:Description>
+              <cd:BitSize>32</cd:BitSize>
+              <cd:NativeType>float</cd:NativeType>
+              <cd:Unit>deg</cd:Unit>
+            </cd:Float>
+          </cd:Field>
+         <cd:Field name="spare_1">
+          <cd:Text>
+            <cd:ByteSize>64</cd:ByteSize>
+             <cd:NativeType>string</cd:NativeType>
+           </cd:Text>
+           <cd:Hidden/>
+          </cd:Field>
+        </cd:Record>
+       </cd:Array>
+    </cd:Field>
+  </cd:Record>
+  <cd:ProductVariable name="num_dsr">
+    <cd:Init><![CDATA[$num_dsr = int(/dsd[0]/num_dsr)]]></cd:Init>
+  </cd:ProductVariable>
+</cd:ProductDefinition>

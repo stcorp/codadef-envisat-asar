@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<cd:Record xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" format="binary" name="ASAR_Spectra_MDSR_asar_rec_data" last-modified="2010-08-26">
+  <cd:Field name="zero_doppler_time">
+    <cd:Time timeformat="binary_envisat_datetime">
+      <cd:Description>Zero Doppler Time (MJD format)</cd:Description>
+    </cd:Time>
+  </cd:Field>
+  <cd:Field name="quality_flag">
+    <cd:Integer>
+      <cd:Description>Quality Indicator (-1 for blank MDSR, 0 otherwise)</cd:Description>
+      <cd:BitSize>8</cd:BitSize>
+      <cd:NativeType>int8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="range_spectral_res">
+    <cd:Float>
+      <cd:Description>Range spectral resolution of the cartesian cross spectrum</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="az_spectral_res">
+    <cd:Float>
+      <cd:Description>Azimuth spectral resolution of the cartesian cross spectrum</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="az_resample_factor">
+    <cd:Float>
+      <cd:Description>Azimuth re-sampling factor in look extraction(Swath specific)</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="spec_tot_energy">
+    <cd:Float>
+      <cd:Description>Spectrum Total Energy</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="spec_max_energy">
+    <cd:Float>
+      <cd:Description>Spectrum Max Energy</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="spec_max_dir">
+    <cd:Float>
+      <cd:Description>Direction of Spectrum Max (deg) on higher resolution grid</cd:Description>
+      <cd:Unit>degrees</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="spec_max_wl">
+    <cd:Float>
+      <cd:Description>Wavelength of Spectrum Max (m) on higher resolution grid</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="clutter_noise">
+    <cd:Float>
+      <cd:Description>Clutter Noise</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="az_cutoff">
+    <cd:Float>
+      <cd:Description>Azimuthal Clutter Cut-off length (m)</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="num_iterations">
+    <cd:Float>
+      <cd:Description>Number of iterations to compute Azimuthal Clutter Cut-off</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="range_offset">
+    <cd:Float>
+      <cd:Description>Range offset of peak of cross covariance function (m)</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="ax_offset">
+    <cd:Float>
+      <cd:Description>Azimuth offset of peak of cross covariance function (m)</cd:Description>
+      <cd:Unit>m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="cc_range_res">
+    <cd:Float>
+      <cd:Description>Range resolution of cross co-variance spectrum (rad/m)</cd:Description>
+      <cd:Unit>rad/m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="cc_azimuth_res">
+    <cd:Float>
+      <cd:Description>Azimuth resolution of cross co-variance spectrum (rad/m)</cd:Description>
+      <cd:Unit>rad/m</cd:Unit>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="sublook_means">
+    <cd:Array>
+      <cd:Description>1st and last Sub-look Image Means</cd:Description>
+      <cd:Dimension>2</cd:Dimension>
+      <cd:Float>
+        <cd:BitSize>32</cd:BitSize>
+        <cd:NativeType>float</cd:NativeType>
+      </cd:Float>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="sublook_variance">
+    <cd:Array>
+      <cd:Description>1st and last Sub-look Image Variance</cd:Description>
+      <cd:Dimension>2</cd:Dimension>
+      <cd:Float>
+        <cd:BitSize>32</cd:BitSize>
+        <cd:NativeType>float</cd:NativeType>
+      </cd:Float>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="sublook_skewness">
+    <cd:Array>
+      <cd:Description>1st and last Sub-look Image skewness</cd:Description>
+      <cd:Dimension>2</cd:Dimension>
+      <cd:Float>
+        <cd:BitSize>32</cd:BitSize>
+        <cd:NativeType>float</cd:NativeType>
+      </cd:Float>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="sublook_kurtosis">
+    <cd:Array>
+      <cd:Description>1st and last Sub-look Image kurtosis</cd:Description>
+      <cd:Dimension>2</cd:Dimension>
+      <cd:Float>
+        <cd:BitSize>32</cd:BitSize>
+        <cd:NativeType>float</cd:NativeType>
+      </cd:Float>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="range_sublook_detrend_coeff">
+    <cd:Array>
+      <cd:Description>1st and last Sub-look de-trend coefficient in range</cd:Description>
+      <cd:Dimension>2</cd:Dimension>
+      <cd:Float>
+        <cd:BitSize>32</cd:BitSize>
+        <cd:NativeType>float</cd:NativeType>
+      </cd:Float>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="az_sublook_detrend_coeff">
+    <cd:Array>
+      <cd:Description>1st and last Sub-look de-trend coefficient in azimuth</cd:Description>
+      <cd:Dimension>2</cd:Dimension>
+      <cd:Float>
+        <cd:BitSize>32</cd:BitSize>
+        <cd:NativeType>float</cd:NativeType>
+      </cd:Float>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="min_imag">
+    <cd:Float>
+      <cd:Description>Min value of Imaginary part of cross spectrum</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="max_imag">
+    <cd:Float>
+      <cd:Description>Max value of Imaginary part of cross spectrum</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="min_real">
+    <cd:Float>
+      <cd:Description>Min value of Real part of cross spectrum</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="max_real">
+    <cd:Float>
+      <cd:Description>Max value of Real part of cross spectrum</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>float</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="spare_1">
+    <cd:Raw>
+      <cd:Description>Spare</cd:Description>
+      <cd:BitSize>64*8</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="real_spectra">
+    <cd:Array>
+      <cd:Description>Real part of cross spectra polar grid. Number of bins nominally 36 by 24. However, only 0 to 180 degree of the spectrum are supplied (18 by 24). Arranged as: 24 wavelength values for [-5,5] deg, 24 for [5,15] deg, etc. The 24 values for each sector are given in order from longest to shortest wavelength.</cd:Description>
+      <cd:Dimension>$num_dir_bins / 2</cd:Dimension>
+      <cd:Dimension>$num_wl_bins</cd:Dimension>
+      <cd:Integer>
+        <cd:BitSize>8</cd:BitSize>
+        <cd:NativeType>uint8</cd:NativeType>
+      </cd:Integer>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="imag_spectra">
+    <cd:Array>
+      <cd:Description>Complex part of cross spectra polar grid. Number of bins nominally 36 by 24. However, only 0 to 180 degree of the spectrum are supplied (18 by 24). Arranged as: 24 wavelength values for [-5,5] deg, 24 for [5,15] deg, etc. The 24 values for each sector are given in order from longest to shortest wavelength.</cd:Description>
+      <cd:Dimension>$num_dir_bins / 2</cd:Dimension>
+      <cd:Dimension>$num_wl_bins</cd:Dimension>
+      <cd:Integer>
+        <cd:BitSize>8</cd:BitSize>
+        <cd:NativeType>uint8</cd:NativeType>
+      </cd:Integer>
+    </cd:Array>
+  </cd:Field>
+</cd:Record>
