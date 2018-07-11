@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:Record format="binary" name="ASAR_Ocean_Spectra_MDSR_asar_rec_data" last-modified="2011-07-02" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
+<cd:Record format="binary" name="MDSR_WV_Ocean_Wave_Spectrum" last-modified="2018-07-11" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
   <cd:Field name="zero_doppler_time">
     <cd:Time timeformat="binary_envisat_datetime">
       <cd:Description>Zero Doppler Time (MJD format)</cd:Description>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:Record format="binary" name="ASAR_SQ1_Image_ADSR_asar_rec_data" last-modified="2011-07-02" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
+<cd:Record format="binary" name="ADSR_IM_SQ" last-modified="2018-07-11" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
   <cd:Field name="zero_doppler_time">
     <cd:Time timeformat="binary_envisat_datetime">
       <cd:Description>Zero doppler time at which SQ information applies</cd:Description>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:Record xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" format="binary" name="ASAR_Dop_Cen_Grid_ADSR_asar_rec_data" last-modified="2011-07-02">
+<cd:Record format="binary" name="ADSR_IM_Doppler_Centroid_Grid" last-modified="2018-07-11" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
   <cd:Field name="first_zero_doppler_time">
     <cd:Time timeformat="binary_envisat_datetime">
       <cd:Description>First Zero Doppler Azimuth time of raw signal data used for this estimates</cd:Description>

@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="ASA_IM__BP_v0" format="binary" last-modified="2011-07-02">
+<cd:ProductDefinition format="binary" id="ASA_IM__BP_v0" last-modified="2018-07-11" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
   <cd:Record format="binary">
     <cd:Field name="mph">
       <cd:NamedType id="MPH"/>
     </cd:Field>
     <cd:Field name="sph">
-      <cd:NamedType id="ASA_IMG_1P_SPH"/>
+      <cd:NamedType id="SPH_IM"/>
     </cd:Field>
     <cd:Field name="dsd">
       <cd:Array format="ascii">
@@ -17,21 +17,21 @@
       <cd:Array>
         <cd:Description>SQ ADSRs</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[0]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_SQ1_Image_ADSR_asar_rec_data"/>
+        <cd:NamedType id="ADSR_IM_SQ"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="geolocation_grid_ads">
       <cd:Array>
         <cd:Description>Geolocation Grid ADSRs</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[1]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Geo_Grid_ADSR_asar_rec_data"/>
+        <cd:NamedType id="ADSR_IM_Geolocation_Grid"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="mds1">
       <cd:Array>
         <cd:Description>Measurement Data Set 1.</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[2]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_BP_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_BP"/>
       </cd:Array>
     </cd:Field>
   </cd:Record>

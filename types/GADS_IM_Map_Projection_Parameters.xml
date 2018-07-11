@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:Record xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" format="binary" name="ASAR_Map_GADS_asar_rec_data" last-modified="2011-07-02">
+<cd:Record format="binary" name="GADS_IM_Map_Projection_Parameters" last-modified="2018-07-11" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
   <cd:Field name="map_descriptor">
     <cd:Text format="ascii">
       <cd:Description>Map projection descriptorone of:UNIVERSAL_TRANSVERSE_MERCATOR</cd:Description>

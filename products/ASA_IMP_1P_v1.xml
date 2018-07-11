@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="ASA_IMP_1P_v1" format="binary" last-modified="2015-10-19">
+<cd:ProductDefinition format="binary" id="ASA_IMP_1P_v1" last-modified="2018-07-11" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
   <cd:Record format="binary">
     <cd:Field name="mph">
       <cd:NamedType id="MPH"/>
     </cd:Field>
     <cd:Field name="sph">
-      <cd:NamedType id="ASA_IMG_1P_SPH"/>
+      <cd:NamedType id="SPH_IM"/>
     </cd:Field>
     <cd:Field name="dsd">
       <cd:Array format="ascii">
@@ -17,56 +17,56 @@
       <cd:Array>
         <cd:Description>SQ ADSRs</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[0]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_SQ1_Image_ADSR_asar_rec_data"/>
+        <cd:NamedType id="ADSR_IM_SQ"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="main_processing_params_ads">
       <cd:Array>
         <cd:Description>Main Processing parameters</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[1]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Main_ADSR_asar_rec_data_v1"/>
+        <cd:NamedType id="ADSR_IM_Main_Processing_Parameters_v1"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="dop_centroid_coeffs_ads">
       <cd:Array>
         <cd:Description>Doppler Centroid Parameters</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[2]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Dop_Cen_ADSR_asar_rec_data"/>
+        <cd:NamedType id="ADSR_IM_Doppler_Centroid_Coefficients"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="sr_gr_ads">
       <cd:Array>
         <cd:Description>Slant Range to Ground Range conversion parameters</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[3]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_SRGR_ADSR_asar_rec_data"/>
+        <cd:NamedType id="ADSR_IM_SRGR_Conversion"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="chirp_params_ads">
       <cd:Array>
         <cd:Description>chirp parameters</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[4]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Chirp_ADSR_asar_rec_data"/>
+        <cd:NamedType id="ADSR_IM_Chirp_Parameters"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="antenna_elev_pattern_ads">
       <cd:Array>
         <cd:Description>Antenna Elevation patterns(s)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[5]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Antenna_ADSR_asar_rec_data"/>
+        <cd:NamedType id="ADSR_IM_Antenna_Elevation_Pattern"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="geolocation_grid_ads">
       <cd:Array>
         <cd:Description>Geolocation Grid ADSRs</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[6]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Geo_Grid_ADSR_asar_rec_data"/>
+        <cd:NamedType id="ADSR_IM_Geolocation_Grid"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="mds1">
       <cd:Array>
         <cd:Description>Measurement Data Set 1.</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[7]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_Gen_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM"/>
       </cd:Array>
     </cd:Field>
   </cd:Record>

@@ -1,12 +1,11 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition id="ASA_XCH_AX_v0" format="binary" last-modified="2012-07-31"
-  xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
+<cd:ProductDefinition format="binary" id="ASA_XCH_AX_v0" last-modified="2018-07-11" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
   <cd:Record format="binary">
     <cd:Field name="mph">
       <cd:NamedType id="MPH"/>
     </cd:Field>
     <cd:Field name="sph">
-      <cd:NamedType id="Auxiliary_Data_SPH"/>
+      <cd:NamedType id="SPH_AX"/>
     </cd:Field>
     <cd:Field name="dsd">
       <cd:Array format="ascii">

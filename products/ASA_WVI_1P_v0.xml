@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="ASA_WVI_1P_v0" format="binary" last-modified="2011-07-02">
+<cd:ProductDefinition format="binary" id="ASA_WVI_1P_v0" last-modified="2018-07-11" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07">
   <cd:Record format="binary">
     <cd:Field name="mph">
       <cd:NamedType id="MPH"/>
     </cd:Field>
     <cd:Field name="sph">
-      <cd:NamedType id="ASA_WVI_1P_SPH"/>
+      <cd:NamedType id="SPH_WV"/>
     </cd:Field>
     <cd:Field name="dsd">
       <cd:Array format="ascii">
@@ -17,2835 +17,2835 @@
       <cd:Array>
         <cd:Description>SQ ADSRs</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[0]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Wave_SQ_ADSR_asar_rec_data"/>
+        <cd:NamedType id="ADSR_WV_SQ"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="geolocation_grid_ads">
       <cd:Array>
         <cd:Description>Wave Mode Geolocation ADS</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[1]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Wave_Geolocation_ADSR_asar_rec_data"/>
+        <cd:NamedType id="ADSR_WV_Geolocation"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="processing_params_ads">
       <cd:Array>
         <cd:Description>Wave Mode processing parameters</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[2]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Wave_Param_ADSR_asar_rec_data"/>
+        <cd:NamedType id="ADSR_WV_Processing_Parameters"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="cross_spectra_mds">
       <cd:Array>
         <cd:Description>Measurement Data Set containing spectra. 1 MDSR per spectra.</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[3]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Spectra_MDSR_asar_rec_data"/>
+        <cd:NamedType id="MDSR_WV_Cross_Spectrum"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_000">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[4]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_001">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[5]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_002">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[6]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_003">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[7]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_004">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[8]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_005">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[9]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_006">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[10]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_007">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[11]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_008">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[12]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_009">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[13]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_010">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[14]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_011">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[15]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_012">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[16]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_013">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[17]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_014">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[18]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_015">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[19]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_016">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[20]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_017">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[21]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_018">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[22]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_019">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[23]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_020">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[24]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_021">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[25]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_022">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[26]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_023">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[27]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_024">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[28]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_025">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[29]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_026">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[30]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_027">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[31]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_028">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[32]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_029">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[33]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_030">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[34]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_031">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[35]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_032">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[36]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_033">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[37]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_034">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[38]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_035">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[39]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_036">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[40]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_037">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[41]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_038">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[42]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_039">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[43]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_040">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[44]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_041">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[45]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_042">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[46]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_043">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[47]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_044">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[48]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_045">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[49]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_046">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[50]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_047">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[51]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_048">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[52]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_049">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[53]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_050">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[54]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_051">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[55]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_052">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[56]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_053">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[57]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_054">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[58]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_055">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[59]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_056">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[60]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_057">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[61]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_058">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[62]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_059">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[63]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_060">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[64]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_061">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[65]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_062">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[66]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_063">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[67]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_064">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[68]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_065">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[69]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_066">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[70]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_067">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[71]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_068">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[72]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_069">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[73]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_070">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[74]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_071">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[75]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_072">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[76]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_073">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[77]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_074">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[78]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_075">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[79]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_076">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[80]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_077">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[81]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_078">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[82]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_079">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[83]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_080">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[84]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_081">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[85]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_082">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[86]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_083">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[87]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_084">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[88]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_085">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[89]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_086">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[90]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_087">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[91]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_088">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[92]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_089">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[93]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_090">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[94]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_091">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[95]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_092">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[96]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_093">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[97]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_094">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[98]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_095">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[99]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_096">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[100]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_097">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[101]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_098">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[102]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_099">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[103]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_100">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[104]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_101">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[105]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_102">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[106]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_103">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[107]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_104">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[108]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_105">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[109]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_106">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[110]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_107">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[111]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_108">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[112]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_109">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[113]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_110">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[114]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_111">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[115]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_112">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[116]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_113">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[117]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_114">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[118]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_115">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[119]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_116">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[120]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_117">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[121]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_118">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[122]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_119">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[123]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_120">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[124]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_121">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[125]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_122">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[126]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_123">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[127]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_124">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[128]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_125">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[129]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_126">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[130]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_127">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[131]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_128">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[132]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_129">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[133]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_130">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[134]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_131">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[135]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_132">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[136]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_133">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[137]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_134">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[138]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_135">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[139]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_136">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[140]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_137">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[141]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_138">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[142]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_139">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[143]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_140">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[144]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_141">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[145]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_142">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[146]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_143">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[147]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_144">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[148]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_145">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[149]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_146">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[150]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_147">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[151]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_148">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[152]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_149">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[153]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_150">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[154]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_151">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[155]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_152">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[156]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_153">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[157]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_154">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[158]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_155">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[159]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_156">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[160]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_157">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[161]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_158">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[162]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_159">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[163]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_160">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[164]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_161">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[165]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_162">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[166]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_163">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[167]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_164">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[168]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_165">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[169]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_166">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[170]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_167">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[171]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_168">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[172]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_169">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[173]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_170">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[174]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_171">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[175]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_172">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[176]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_173">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[177]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_174">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[178]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_175">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[179]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_176">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[180]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_177">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[181]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_178">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[182]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_179">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[183]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_180">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[184]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_181">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[185]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_182">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[186]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_183">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[187]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_184">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[188]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_185">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[189]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_186">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[190]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_187">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[191]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_188">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[192]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_189">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[193]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_190">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[194]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_191">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[195]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_192">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[196]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_193">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[197]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_194">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[198]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_195">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[199]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_196">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[200]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_197">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[201]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_198">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[202]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_199">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[203]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_200">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[204]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_201">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[205]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_202">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[206]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_203">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[207]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_204">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[208]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_205">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[209]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_206">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[210]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_207">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[211]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_208">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[212]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_209">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[213]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_210">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[214]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_211">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[215]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_212">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[216]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_213">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[217]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_214">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[218]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_215">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[219]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_216">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[220]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_217">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[221]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_218">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[222]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_219">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[223]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_220">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[224]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_221">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[225]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_222">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[226]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_223">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[227]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_224">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[228]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_225">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[229]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_226">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[230]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_227">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[231]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_228">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[232]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_229">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[233]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_230">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[234]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_231">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[235]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_232">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[236]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_233">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[237]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_234">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[238]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_235">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[239]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_236">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[240]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_237">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[241]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_238">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[242]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_239">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[243]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_240">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[244]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_241">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[245]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_242">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[246]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_243">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[247]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_244">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[248]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_245">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[249]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_246">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[250]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_247">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[251]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_248">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[252]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_249">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[253]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_250">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[254]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_251">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[255]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_252">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[256]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_253">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[257]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_254">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[258]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_255">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[259]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_256">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[260]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_257">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[261]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_258">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[262]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_259">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[263]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_260">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[264]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_261">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[265]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_262">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[266]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_263">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[267]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_264">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[268]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_265">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[269]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_266">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[270]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_267">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[271]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_268">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[272]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_269">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[273]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_270">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[274]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_271">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[275]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_272">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[276]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_273">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[277]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_274">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[278]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_275">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[279]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_276">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[280]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_277">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[281]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_278">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[282]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_279">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[283]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_280">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[284]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_281">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[285]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_282">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[286]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_283">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[287]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_284">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[288]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_285">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[289]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_286">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[290]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_287">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[291]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_288">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[292]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_289">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[293]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_290">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[294]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_291">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[295]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_292">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[296]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_293">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[297]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_294">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[298]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_295">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[299]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_296">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[300]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_297">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[301]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_298">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[302]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_299">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[303]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_300">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[304]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_301">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[305]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_302">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[306]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_303">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[307]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_304">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[308]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_305">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[309]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_306">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[310]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_307">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[311]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_308">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[312]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_309">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[313]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_310">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[314]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_311">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[315]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_312">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[316]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_313">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[317]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_314">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[318]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_315">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[319]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_316">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[320]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_317">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[321]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_318">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[322]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_319">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[323]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_320">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[324]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_321">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[325]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_322">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[326]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_323">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[327]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_324">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[328]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_325">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[329]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_326">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[330]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_327">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[331]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_328">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[332]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_329">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[333]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_330">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[334]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_331">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[335]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_332">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[336]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_333">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[337]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_334">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[338]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_335">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[339]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_336">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[340]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_337">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[341]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_338">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[342]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_339">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[343]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_340">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[344]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_341">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[345]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_342">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[346]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_343">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[347]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_344">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[348]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_345">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[349]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_346">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[350]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_347">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[351]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_348">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[352]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_349">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[353]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_350">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[354]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_351">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[355]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_352">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[356]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_353">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[357]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_354">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[358]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_355">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[359]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_356">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[360]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_357">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[361]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_358">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[362]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_359">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[363]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_360">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[364]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_361">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[365]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_362">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[366]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_363">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[367]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_364">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[368]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_365">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[369]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_366">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[370]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_367">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[371]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_368">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[372]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_369">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[373]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_370">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[374]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_371">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[375]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_372">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[376]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_373">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[377]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_374">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[378]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_375">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[379]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_376">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[380]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_377">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[381]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_378">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[382]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_379">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[383]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_380">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[384]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_381">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[385]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_382">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[386]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_383">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[387]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_384">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[388]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_385">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[389]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_386">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[390]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_387">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[391]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_388">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[392]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_389">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[393]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_390">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[394]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_391">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[395]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_392">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[396]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_393">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[397]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_394">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[398]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_395">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[399]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_396">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[400]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_397">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[401]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_398">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[402]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_399">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[403]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
     <cd:Field name="slc_imagette_mds_400">
       <cd:Array>
         <cd:Description>Measurement Data Set for a single imagette (corresponds to one spectrum MDSR)</cd:Description>
         <cd:Dimension><![CDATA[$num_dsr[404]]]></cd:Dimension>
-        <cd:NamedType id="ASAR_Image_MDSR_SLC_asar_rec_data"/>
+        <cd:NamedType id="MDSR_IM_SLC"/>
       </cd:Array>
     </cd:Field>
   </cd:Record>
